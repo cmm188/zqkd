@@ -18,7 +18,7 @@ const axios = require('axios');
     //获取分享时间字符串
     var q=Date.parse(new Date())/1000;
     
-//get 函数
+//get 函数(j为随机si字符，q为分享的的时间，p为阅读时间)
     var aa=function(){
       
         var j = randomString();
