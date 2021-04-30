@@ -18,12 +18,12 @@ const axios = require('axios');
     //获取分享时间字符串
     var q=Date.parse(new Date())/1000;
     
-//get 函数(j为随机si字符，q为分享的的时间，p为阅读时间)
+//get 函数
     var aa=function(){
       
         var j = randomString();
  var p = new Date().getTime();
-    const url= 'https://script.baertt.com/count2/callback?si='+j+'&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253D8MzJgNdEKAO0xvq7nDMYZki2qDvxH5wBOEn1ZPYQ3lm9pbD2yn%2526uid%253D47273215%2526phone_code%253Df366260adcd3a6e11e53babb137a325c%2526scid%253D38062291%2526time%253D'+q+'%2526app_version%253D1.8.0%2526sign%253D5886efa3bb29e43235c73815c88ff62d&_='+p+'&jsonpcallback=jsonp6'；
+    const url= 'https://script.baertt.com/count2/callback?si='+j+'&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253D8MzJgNdEKAO0xvq7nDMYZki2qDvxH5wBOEn1ZPYQ3lm9pbD2yn%2526uid%253D47273215%2526phone_code%253Df366260adcd3a6e11e53babb137a325c%2526scid%253D38062291%2526time%253D'+q+'%2526app_version%253D1.8.0%2526sign%253D5886efa3bb29e43235c73815c88ff62d&_='+p+'&jsonpcallback=jsonp6';
     
     return axios.get(url, {
     
