@@ -23,7 +23,7 @@ const axios = require('axios');
       
         var j = randomString();
  var p = new Date().getTime();
-    const url= 'https://script.baertt.com/count2/callback?si='+j+'&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DyGdoJZx2eAwpjgl7O89wyPUjow5ySgmbVR6a0PMbqvLnr9EKzR%2526uid%253D47273215%2526phone_code%253Df366260adcd3a6e11e53babb137a325c%2526scid%253D37862082%2526time%253D'+q+'%2526app_version%253D1.8.0%2526sign%253Dfb13166741d447acdebad0efdbeeda92&_='+p+'&jsonpcallback=jsonp6';
+    const url= 'https://script.baertt.com/count2/callback?si='+j+'&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DeQVjADm2pM09d8g4X6rGlpFAnJkNFAeRrkxalyGPYqnLbZRBXK%2526uid%253D47273215%2526phone_code%253Df366260adcd3a6e11e53babb137a325c%2526scid%253D38124675%2526time%253D'+q+'%2526app_version%253D1.8.0%2526sign%253Dc2ac6494d502d60bfcebc010b81c8e46&_='+p+'&jsonpcallback=jsonp6';
     
     return axios.get(url, {
     
@@ -50,7 +50,7 @@ const sleep = function (ms){
   
 }
 const request = async function(){
-  for(let i=0;i<100;i++){
+  for(let i=0;i<80;i++){
     aa();
     var num=Math.ceil(Math.random() * 25);
     await sleep(num*500);
